@@ -19,8 +19,14 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M5</version>
+                <version>3.0.0-M6</version>
                 <configuration>
+<!--                    <parallel>methods</parallel>-->
+<!--               Executes 5 threads by default.-->
+<!--                    <threadCount>2</threadCount>-->
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
                     <skip>false</skip>
                 </configuration>
             </plugin>

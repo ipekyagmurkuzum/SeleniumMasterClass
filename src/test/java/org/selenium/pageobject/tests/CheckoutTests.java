@@ -22,7 +22,7 @@ public class CheckoutTests extends BaseTest {
         BillingAddress billingAddress = JacksonUtils.deserializeJson("billingAddress.json", BillingAddress.class);
         Product product = new Product(1215);
 
-        StorePage storePage = new HomePage(driver)
+        StorePage storePage = new HomePage(getDriver())
                 .load()
                 .navigateToStoreUsingMenu()
                 .searchForProduct(searchText);
@@ -46,7 +46,7 @@ public class CheckoutTests extends BaseTest {
         Product product = new Product(1215);
         Credentials credentials = JacksonUtils.deserializeJson("credentials.json", Credentials.class);
 
-        StorePage storePage = new HomePage(driver)
+        StorePage storePage = new HomePage(getDriver())
                 .load()
                 .navigateToStoreUsingMenu()
                 .searchForProduct(searchText);
