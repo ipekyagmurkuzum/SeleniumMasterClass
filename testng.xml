@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+    <test name="Firefox"   >
+<!--        <packages>-->
+<!--            <package name="org.selenium.pageobject.tests" />-->
+<!--        </packages>-->
+        <parameter name="browser" value="FIREFOX"/>
+        <classes>
+            <class name="org.selenium.pageobject.tests.CheckoutTests" />
+        </classes>
+    </test>
+
+    <test name="Chrome"   >
+        <!--        <packages>-->
+        <!--            <package name="org.selenium.pageobject.tests" />-->
+        <!--        </packages>-->
+        <parameter name="browser" value="CHROME"/>
+        <classes>
+            <class name="org.selenium.pageobject.tests.CheckoutTests" />
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,10 @@
+{
+  "firstName": "Tester",
+  "lastName": "Tester",
+  "addressLineOne": "Antalya",
+  "country": "Turkey",
+  "city": "Antalya",
+  "state": "Antalya",
+  "postalCode": "39082",
+  "email": "test@automation.com"
+}

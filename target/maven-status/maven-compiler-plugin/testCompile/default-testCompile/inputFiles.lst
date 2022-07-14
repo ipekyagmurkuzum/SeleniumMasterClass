@@ -1,0 +1,13 @@
+/Users/yagmur/IdeaProjects/SeleniumMasterclass/src/test/java/org/selenium/pageobject/factory/DriverManager.java
+/Users/yagmur/IdeaProjects/SeleniumMasterclass/src/test/java/org/selenium/pageobject/tests/CheckoutTests.java
+/Users/yagmur/IdeaProjects/SeleniumMasterclass/src/test/java/org/selenium/pageobject/objects/Product.java
+/Users/yagmur/IdeaProjects/SeleniumMasterclass/src/test/java/org/selenium/pageobject/utils/JacksonUtils.java
+/Users/yagmur/IdeaProjects/SeleniumMasterclass/src/test/java/org/selenium/pageobject/constants/DriverType.java
+/Users/yagmur/IdeaProjects/SeleniumMasterclass/src/test/java/org/selenium/pageobject/pages/CheckoutPage.java
+/Users/yagmur/IdeaProjects/SeleniumMasterclass/src/test/java/org/selenium/pageobject/base/BasePage.java
+/Users/yagmur/IdeaProjects/SeleniumMasterclass/src/test/java/org/selenium/pageobject/pages/StorePage.java
+/Users/yagmur/IdeaProjects/SeleniumMasterclass/src/test/java/org/selenium/pageobject/objects/BillingAddress.java
+/Users/yagmur/IdeaProjects/SeleniumMasterclass/src/test/java/org/selenium/pageobject/base/BaseTest.java
+/Users/yagmur/IdeaProjects/SeleniumMasterclass/src/test/java/org/selenium/pageobject/objects/Credentials.java
+/Users/yagmur/IdeaProjects/SeleniumMasterclass/src/test/java/org/selenium/pageobject/pages/HomePage.java
+/Users/yagmur/IdeaProjects/SeleniumMasterclass/src/test/java/org/selenium/pageobject/pages/CartPage.java
