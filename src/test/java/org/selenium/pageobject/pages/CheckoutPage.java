@@ -16,10 +16,10 @@ public class CheckoutPage extends BasePage {
     private final By emailField = By.id("billing_email");
     private final By placeOrderBtn = By.id("place_order");
     private final By notice = By.cssSelector(".woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-received");
-    private final By clickToLoginBtn = By.cssSelector(".showlogin");
+    private final By clickHereToLoginBtn = By.cssSelector(".showlogin");
     private final By usernameField = By.id("username");
     private final By passwordField = By.id("password");
-    private final By loginBtn = By.cssSelector("button[value='Login']");
+    private final By loginBtn = By.name("login");
     private final By overlay = By.cssSelector(".blockUI.blockOverlay");
     private final By countryDropdown = By.id("billing_country");
 
@@ -27,9 +27,15 @@ public class CheckoutPage extends BasePage {
     private final By directBankTransferRadioButton = By.id("payment_method_bacs");
     private final By alternateCountryDropdown = By.id("select2-billing_country-container");
     private final By alternateStateDropdown = By.id("select2-billing_state-container");
+    private final By productName = By.cssSelector("td.product-name");
 
     public CheckoutPage(WebDriver driver) {
         super(driver);
+    }
+
+    public CheckoutPage load() {
+        load("/checkout/");
+        return this;
     }
 
     public CheckoutPage enterFirstName(String firstName) {
@@ -79,7 +85,7 @@ public class CheckoutPage extends BasePage {
         return this;
     }
     private CheckoutPage clickLoginLink() {
-        driver.findElement(clickToLoginBtn).click();
+        driver.findElement(clickHereToLoginBtn).click();
         return this;
     }
 
@@ -91,7 +97,7 @@ public class CheckoutPage extends BasePage {
 
 
     private CheckoutPage clickLoginBtn() {
-        driver.findElement(loginBtn).click();
+        wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(loginBtn))).click();
         return this;
     }
 
@@ -140,4 +146,16 @@ public class CheckoutPage extends BasePage {
         return this;
     }
 
+    public boolean isClickToLoginDisplayed() {
+        try {
+            driver.findElement(clickHereToLoginBtn);
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+        return true;
+    }
+
+    public String getProductName() {
+        return driver.findElement(productName).getText();
+    }
 }

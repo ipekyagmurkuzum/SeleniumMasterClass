@@ -6,7 +6,6 @@ import org.selenium.pageobject.objects.Product;
 import org.selenium.pageobject.pages.CartPage;
 import org.selenium.pageobject.pages.StorePage;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.io.IOException;

@@ -7,6 +7,6 @@ public class FakerUtils {
     Faker faker = new Faker();
 
     public Long generateRandomNumber(){
-        return faker.number().randomNumber();
+        return faker.number().randomNumber(10,true);
     }
 }

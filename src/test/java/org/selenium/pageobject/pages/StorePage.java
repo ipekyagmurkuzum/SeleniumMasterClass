@@ -33,7 +33,7 @@ public class StorePage extends BasePage {
     }
 
     public String getTitle() {
-        return driver.findElement(searchTitle).getText();
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(searchTitle)).getText();
     }
 
     private By getAddToCartBtnElement(String productName) {
