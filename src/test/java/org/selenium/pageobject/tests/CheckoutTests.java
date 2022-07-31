@@ -1,13 +1,14 @@
 package org.selenium.pageobject.tests;
 
 import org.selenium.pageobject.base.BaseTest;
-import org.selenium.pageobject.objects.Credentials;
+import org.selenium.pageobject.objects.User;
 import org.selenium.pageobject.objects.BillingAddress;
 import org.selenium.pageobject.objects.Product;
 import org.selenium.pageobject.pages.CartPage;
 import org.selenium.pageobject.pages.CheckoutPage;
 import org.selenium.pageobject.pages.HomePage;
 import org.selenium.pageobject.pages.StorePage;
+import org.selenium.pageobject.utils.ConfigLoader;
 import org.selenium.pageobject.utils.JacksonUtils;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -44,7 +45,9 @@ public class CheckoutTests extends BaseTest {
     public void loginAndCheckoutUsingDirectBankTransfer() throws IOException, InterruptedException {
         BillingAddress billingAddress = JacksonUtils.deserializeJson("billingAddress.json", BillingAddress.class);
         Product product = new Product(1215);
-        Credentials credentials = JacksonUtils.deserializeJson("credentials.json", Credentials.class);
+        User user = new User(
+                ConfigLoader.getInstance().getUsername(),
+                ConfigLoader.getInstance().getPassword());
 
         StorePage storePage = new HomePage(getDriver())
                 .load()
@@ -58,7 +61,7 @@ public class CheckoutTests extends BaseTest {
 
         CheckoutPage checkoutPage = cartPage
                 .checkout()
-                .login(credentials)
+                .login(user)
                 .enterBillingInformation(billingAddress)
                 .selectDirectBankTransfer()
                 .placeOrder();

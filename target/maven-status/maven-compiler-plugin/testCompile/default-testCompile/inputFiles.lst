@@ -11,3 +11,6 @@
 /Users/yagmur/IdeaProjects/SeleniumMasterclass/src/test/java/org/selenium/pageobject/objects/Credentials.java
 /Users/yagmur/IdeaProjects/SeleniumMasterclass/src/test/java/org/selenium/pageobject/pages/HomePage.java
 /Users/yagmur/IdeaProjects/SeleniumMasterclass/src/test/java/org/selenium/pageobject/pages/CartPage.java
+/Users/yagmur/IdeaProjects/SeleniumMasterclass/src/test/java/org/selenium/pageobject/utils/ConfigLoader.java
+/Users/yagmur/IdeaProjects/SeleniumMasterclass/src/test/java/org/selenium/pageobject/utils/PropertyUtils.java
+/Users/yagmur/IdeaProjects/SeleniumMasterclass/src/test/java/org/selenium/pageobject/constants/EnvType.java

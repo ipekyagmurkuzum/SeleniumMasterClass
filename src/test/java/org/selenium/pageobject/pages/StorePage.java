@@ -32,7 +32,7 @@ public class StorePage extends BasePage {
         return this;
     }
 
-    public String getSearchTitle() {
+    public String getTitle() {
         return driver.findElement(searchTitle).getText();
     }
 
@@ -53,5 +53,10 @@ public class StorePage extends BasePage {
 
     public boolean isSearchTitleCorrect(String searchText){
         return wait.until(ExpectedConditions.textToBePresentInElementLocated(searchTitle,"Search results: “" + searchText + "”"));
+    }
+
+    public StorePage load() {
+        load("/store");
+        return this;
     }
 }

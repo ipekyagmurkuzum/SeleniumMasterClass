@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.selenium.pageobject.utils.ConfigLoader;
 
 import java.time.Duration;
 import java.util.List;
@@ -22,7 +23,7 @@ public class BasePage {
     }
 
     public void load(String endPoint) {
-        driver.get("https://askomdch.com" + endPoint);
+        driver.get(ConfigLoader.getInstance().getBaseUrl() + endPoint);
     }
 
     public void waitForOverlaysToDisappear(By overlay) {
@@ -31,9 +32,6 @@ public class BasePage {
         if (overlays.size() > 0) {
             wait.until(ExpectedConditions
                     .invisibilityOfAllElements(overlays));
-            System.out.println("overlays handled");
-        } else {
-            System.out.println("overlays not found");
         }
     }
 

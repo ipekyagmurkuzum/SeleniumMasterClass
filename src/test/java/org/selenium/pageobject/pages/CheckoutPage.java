@@ -1,13 +1,10 @@
 package org.selenium.pageobject.pages;
 
-import com.sun.nio.file.ExtendedOpenOption;
 import org.openqa.selenium.*;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.selenium.pageobject.base.BasePage;
 import org.selenium.pageobject.objects.BillingAddress;
-import org.selenium.pageobject.objects.Credentials;
+import org.selenium.pageobject.objects.User;
 
 public class CheckoutPage extends BasePage {
 
@@ -86,9 +83,9 @@ public class CheckoutPage extends BasePage {
         return this;
     }
 
-    private CheckoutPage enterCredentials(Credentials credentials) {
-        driver.findElement(usernameField).sendKeys(credentials.getUsername());
-        driver.findElement(passwordField).sendKeys(credentials.getPassword());
+    private CheckoutPage enterCredentials(User user) {
+        driver.findElement(usernameField).sendKeys(user.getUsername());
+        driver.findElement(passwordField).sendKeys(user.getPassword());
         return this;
     }
 
@@ -98,9 +95,9 @@ public class CheckoutPage extends BasePage {
         return this;
     }
 
-    public CheckoutPage login(Credentials credentials){
+    public CheckoutPage login(User user){
         clickLoginLink();
-        enterCredentials(credentials);
+        enterCredentials(user);
         clickLoginBtn();
         return this;
     }
