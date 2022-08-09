@@ -38,4 +38,8 @@ public class BasePage {
     public boolean isTextCorrect(By locator, String expectedText) {
         return wait.until(ExpectedConditions.textToBePresentInElementLocated(locator,expectedText));
     }
+
+    public boolean isUrlCorrect(String endpoint) {
+        return wait.until(ExpectedConditions.urlToBe(ConfigLoader.getInstance().getBaseUrl() + endpoint));
+    }
 }

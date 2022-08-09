@@ -4,12 +4,10 @@ package org.selenium.pageobject.tests;
 import org.selenium.pageobject.api.actions.CartApi;
 import org.selenium.pageobject.api.actions.SignUpApi;
 import org.selenium.pageobject.base.BaseTest;
-import org.selenium.pageobject.objects.BillingAddress;
 import org.selenium.pageobject.objects.Product;
 import org.selenium.pageobject.objects.User;
 import org.selenium.pageobject.pages.CheckoutPage;
 import org.selenium.pageobject.utils.FakerUtils;
-import org.selenium.pageobject.utils.JacksonUtils;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -24,7 +22,6 @@ public class LoginTest extends BaseTest {
                 .setUsername(username)
                 .setPassword("demouserpwd")
                 .setEmail(username + "@yagmur.com");
-        BillingAddress billingAddress = JacksonUtils.deserializeJson("billingAddress.json", BillingAddress.class);
 
         SignUpApi signUpApi = new SignUpApi();
         signUpApi.register(user);

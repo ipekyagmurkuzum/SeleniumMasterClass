@@ -10,6 +10,7 @@ public class StorePage extends BasePage {
     private final By searchBtn = By.cssSelector("button[value='Search']");
     private final By searchTitle = By.cssSelector(".woocommerce-products-header__title.page-title");
     private final By viewCartBtn = By.cssSelector("a[title='View cart']");
+    public final By noProductsFoundAlertText = By.cssSelector("p.woocommerce-info");
 
     public StorePage(WebDriver driver) {
         super(driver);
@@ -26,10 +27,16 @@ public class StorePage extends BasePage {
 
     }
 
-    public StorePage searchForProduct(String text) {
+    public StorePage searchForProductWithPartialMatch(String text) {
         wait.until(ExpectedConditions.visibilityOfElementLocated(searchField));
         enterTextInSearchField(text).clickSearchBtn();
         return this;
+    }
+
+    public ProductPage searchForProductWithExactMatch(String text) {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(searchField));
+        enterTextInSearchField(text).clickSearchBtn();
+        return new ProductPage(driver);
     }
 
     public String getTitle() {
@@ -51,7 +58,7 @@ public class StorePage extends BasePage {
         return new CartPage(driver);
     }
 
-    public boolean isSearchTitleCorrect(String searchText){
+    public boolean isSearchTitleContainsText(String searchText){
         return wait.until(ExpectedConditions.textToBePresentInElementLocated(searchTitle,"Search results: “" + searchText + "”"));
     }
 
@@ -59,4 +66,10 @@ public class StorePage extends BasePage {
         load("/store");
         return this;
     }
+
+    public boolean isNoProductsFoundTextDisplayed() {
+        return wait.until(ExpectedConditions.textToBePresentInElementLocated(noProductsFoundAlertText,
+                "No products were found matching your selection."));
+    }
+
 }
