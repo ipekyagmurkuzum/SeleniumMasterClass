@@ -22,4 +22,13 @@ public class AddToCartTest extends BaseTest {
         Assert.assertTrue(cartPage.isProductNameCorrect(product.getName()));
     }
 
+    @Test
+    public void addFeaturedProductToCart() {
+
+    }
+
+    @Test
+    public void addToCartFromProductPage() {
+
+    }
 }

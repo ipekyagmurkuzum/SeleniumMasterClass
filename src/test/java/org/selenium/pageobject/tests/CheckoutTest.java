@@ -29,13 +29,13 @@ public class CheckoutTest extends BaseTest {
                 .load();
         CartApi cartApi = new CartApi();
 
-        cartApi.addToCart(1215,1);
+        cartApi.addToCart(1215, 1);
         injectCookiesToBrowser(cartApi.getCookies());
         checkoutPage.load()
                 .enterBillingInformation(billingAddress)
                 .selectDirectBankTransfer()
                 .placeOrder();
-        Assert.assertTrue(checkoutPage.isNoticeCorrect( "Thank you. Your order has been received."));
+        Assert.assertTrue(checkoutPage.isNoticeCorrect("Thank you. Your order has been received."));
     }
 
     @Test
@@ -64,6 +64,16 @@ public class CheckoutTest extends BaseTest {
                 .enterBillingInformation(billingAddress)
                 .selectDirectBankTransfer()
                 .placeOrder();
-        Assert.assertTrue(checkoutPage.isNoticeCorrect( "Thank you. Your order has been received."));
+        Assert.assertTrue(checkoutPage.isNoticeCorrect("Thank you. Your order has been received."));
+    }
+
+    @Test
+    public void guestCheckoutUsingCashOnDelivery() {
+
+    }
+
+    @Test
+    public void loginAndCheckoutUsingCashOnDelivery() {
+
     }
 }
