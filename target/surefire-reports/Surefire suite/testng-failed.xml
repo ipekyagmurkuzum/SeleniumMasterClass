@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="6" parallel="methods" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="6" parallel="methods" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="org.selenium.pageobject.tests.NavigationTest">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="startDriver"/>
+          <include name="NavigateFromHomeToStoreUsingMainMenu"/>
+        </methods>
+      </class> <!-- org.selenium.pageobject.tests.NavigationTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

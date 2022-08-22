@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-31T23:09:28 TRT" name="Surefire suite" finished-at="2022-07-31T23:10:19 TRT" duration-ms="51043">
+    <groups>
+    </groups>
+    <test started-at="2022-07-31T23:09:28 TRT" name="Surefire test" finished-at="2022-07-31T23:10:19 TRT" duration-ms="51043">
+      <class name="org.selenium.pageobject.tests.CheckoutTest">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:org.selenium.pageobject.tests.CheckoutTest@14ec4505]" started-at="2022-07-31T23:09:28 TRT" name="startDriver" finished-at="2022-07-31T23:09:43 TRT" duration-ms="14587" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:org.selenium.pageobject.tests.CheckoutTest@14ec4505]" started-at="2022-07-31T23:09:28 TRT" name="startDriver" finished-at="2022-07-31T23:09:43 TRT" duration-ms="14589" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="guestCheckoutUsingDirectBankTransfer()[pri:0, instance:org.selenium.pageobject.tests.CheckoutTest@14ec4505]" started-at="2022-07-31T23:09:43 TRT" name="guestCheckoutUsingDirectBankTransfer" finished-at="2022-07-31T23:10:16 TRT" duration-ms="32631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- guestCheckoutUsingDirectBankTransfer -->
+        <test-method signature="loginAndCheckoutUsingDirectBankTransfer()[pri:0, instance:org.selenium.pageobject.tests.CheckoutTest@14ec4505]" started-at="2022-07-31T23:09:43 TRT" name="loginAndCheckoutUsingDirectBankTransfer" finished-at="2022-07-31T23:10:19 TRT" duration-ms="36097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndCheckoutUsingDirectBankTransfer -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:org.selenium.pageobject.tests.CheckoutTest@14ec4505]" started-at="2022-07-31T23:10:16 TRT" name="quitDriver" finished-at="2022-07-31T23:10:16 TRT" duration-ms="325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:org.selenium.pageobject.tests.CheckoutTest@14ec4505]" started-at="2022-07-31T23:10:19 TRT" name="quitDriver" finished-at="2022-07-31T23:10:19 TRT" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- org.selenium.pageobject.tests.CheckoutTest -->
+      <class name="org.selenium.pageobject.tests.NavigationTest">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:org.selenium.pageobject.tests.NavigationTest@1460a8c0]" started-at="2022-07-31T23:09:28 TRT" name="startDriver" finished-at="2022-07-31T23:09:43 TRT" duration-ms="14381" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="NavigateFromHomeToStoreUsingMainMenu()[pri:0, instance:org.selenium.pageobject.tests.NavigationTest@1460a8c0]" started-at="2022-07-31T23:09:43 TRT" name="NavigateFromHomeToStoreUsingMainMenu" finished-at="2022-07-31T23:09:56 TRT" duration-ms="13041" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".woocommerce-products-header__title.page-title"}
+  (Session info: chrome=103.0.5060.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'Ipek-MacBook-Pro.local', ip: 'fe80:0:0:0:8e4:ee60:ce8e:3bf2%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.3.1', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [386f8151e87b1ccb1081d74db1d6f6e5, findElement {using=css selector, value=.woocommerce-products-header__title.page-title}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: /var/folders/n6/xrb7chjd1yj...}, goog:chromeOptions: {debuggerAddress: localhost:52184}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:52184/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 386f8151e87b1ccb1081d74db1d6f6e5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".woocommerce-products-header__title.page-title"}
+  (Session info: chrome=103.0.5060.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'Ipek-MacBook-Pro.local', ip: 'fe80:0:0:0:8e4:ee60:ce8e:3bf2%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.3.1', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [386f8151e87b1ccb1081d74db1d6f6e5, findElement {using=css selector, value=.woocommerce-products-header__title.page-title}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: /var/folders/n6/xrb7chjd1yj...}, goog:chromeOptions: {debuggerAddress: localhost:52184}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:52184/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 386f8151e87b1ccb1081d74db1d6f6e5
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:398)
+at org.selenium.pageobject.pages.StorePage.getTitle(StorePage.java:36)
+at org.selenium.pageobject.tests.NavigationTest.NavigateFromHomeToStoreUsingMainMenu(NavigationTest.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigateFromHomeToStoreUsingMainMenu -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:org.selenium.pageobject.tests.NavigationTest@1460a8c0]" started-at="2022-07-31T23:09:56 TRT" name="quitDriver" finished-at="2022-07-31T23:09:57 TRT" duration-ms="591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- org.selenium.pageobject.tests.NavigationTest -->
+      <class name="org.selenium.pageobject.tests.LoginTest">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:org.selenium.pageobject.tests.LoginTest@79ca92b9]" started-at="2022-07-31T23:09:28 TRT" name="startDriver" finished-at="2022-07-31T23:09:43 TRT" duration-ms="14376" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="loginDuringCheckout()[pri:0, instance:org.selenium.pageobject.tests.LoginTest@79ca92b9]" started-at="2022-07-31T23:09:43 TRT" name="loginDuringCheckout" finished-at="2022-07-31T23:10:12 TRT" duration-ms="28859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDuringCheckout -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:org.selenium.pageobject.tests.LoginTest@79ca92b9]" started-at="2022-07-31T23:10:12 TRT" name="quitDriver" finished-at="2022-07-31T23:10:12 TRT" duration-ms="209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- org.selenium.pageobject.tests.LoginTest -->
+      <class name="org.selenium.pageobject.tests.AddToCartTest">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:org.selenium.pageobject.tests.AddToCartTest@4f638935]" started-at="2022-07-31T23:09:28 TRT" name="startDriver" finished-at="2022-07-31T23:09:43 TRT" duration-ms="14772" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="addToCartFromStorePage()[pri:0, instance:org.selenium.pageobject.tests.AddToCartTest@4f638935]" started-at="2022-07-31T23:09:43 TRT" name="addToCartFromStorePage" finished-at="2022-07-31T23:10:03 TRT" duration-ms="19646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartFromStorePage -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:org.selenium.pageobject.tests.AddToCartTest@4f638935]" started-at="2022-07-31T23:10:03 TRT" name="quitDriver" finished-at="2022-07-31T23:10:03 TRT" duration-ms="368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- org.selenium.pageobject.tests.AddToCartTest -->
+      <class name="org.selenium.pageobject.tests.SearchTest">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:org.selenium.pageobject.tests.SearchTest@8909f18]" started-at="2022-07-31T23:09:28 TRT" name="startDriver" finished-at="2022-07-31T23:09:43 TRT" duration-ms="14589" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="searchWithPartialMatch()[pri:0, instance:org.selenium.pageobject.tests.SearchTest@8909f18]" started-at="2022-07-31T23:09:43 TRT" name="searchWithPartialMatch" finished-at="2022-07-31T23:10:00 TRT" duration-ms="16690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchWithPartialMatch -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:org.selenium.pageobject.tests.SearchTest@8909f18]" started-at="2022-07-31T23:10:00 TRT" name="quitDriver" finished-at="2022-07-31T23:10:00 TRT" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- org.selenium.pageobject.tests.SearchTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
